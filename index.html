@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://kit.fontawesome.com/2d4958e339.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d4958e339.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Bucket List</h1>
+            <ul id="nav-items">                            
+            </ul>
+            <button id="mobile-menu""><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-section">
+            <h2>Hi! <br/> My name is <span id="user-name"><strong>Neil</strong></span>, and welcome to my travel bucket list!</h2>
+        </section>
+        <div class="all-places">          
+        </div>
+        <button id="back-to-top" class="d-none"><i class="fas fa-arrow-up"></i></button>
+    </main>
+
+    <footer>
+        <p>©MyBucketList <span id="this-year">2021</span></p>
+    </footer>
+
+    <section class="modal">
+
+        <div class="modal-contents">
+            <h2>Welcome to your bucket list creator!</h2>
+            <div>
+                <hr>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>                
+            </div>
+            <p class="text">To start we’ll need to ask you a few questions</p>
+            <form action="">
+                <label for="name">What is your name?</label>
+                <br/>
+                <input type="text" name="name" id="name">
+                <p class="error-message d-none">Please enter your name</p>
+                <div class="buttons">                
+                    <input type="submit" value="Continue" class="button continue">
+                </div>    
+            </form>             
+        </div>
+
+       
+        <div class="modal-contents d-none">
+            <h2>Top 5 destinations</h2>
+            <div>
+                <hr>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>                
+            </div>
+            <p class="text">Please choose the top 5 places you’d like to visit </p>
+            <form action="" class="form">
+                <div class="inputs">
+                    <div>
+                        <label for="place1">Destination 1</label>
+                        <br/>
+                        <select name="place" id="place1">                                                    
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="place2">Destination 2</label>
+                        <br/>
+                        <select name="place" id="place2">                        
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="place3">Destination 3</label>
+                        <br/>
+                        <select name="place" id="place3">                        
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="place4">Destination 4</label>
+                        <br/>
+                        <select name="place" id="place4">                        
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="place5">Destination 5</label>
+                        <br/>
+                        <select name="place" id="place5">                        
+                        </select>
+                    </div>                         
+                </div>
+                <p class="error-message d-none">Please select your destinations</p>
+                <button class="button-secondary reset" style="display: inline;">Reset choices</button>                
+                <div class="buttons">
+                    <button class="button back">Back</button>
+                    <input type="submit" value="Continue"  class="button continue">
+                </div>    
+            </form>                
+        </div>
+
+        <div class="modal-contents d-none">
+            <h2>Colour theme</h2>
+            <div>
+                <hr>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                </div>                
+            </div>
+            <p class="text">Please choose your color theme</p>
+           <form action="" class="form">
+               <div class="inputs">
+                    <input type="button" data-hex="#e46363" value="red" class="color-btn red">
+                    <input type="button" data-hex="#6383e4" value="blue" class="color-btn blue">
+                    <input type="button" data-hex="#0dc82e" value="green" class="color-btn green">
+                    <input type="button" data-hex="#9463e4" value="purple" class="color-btn purple">
+                    <input type="button" data-hex="#5e6477" value="grey" class="color-btn grey">
+                    <input type="button" data-hex="#ca63e4" value="pink" class="color-btn pink">
+                    <input type="button" data-hex="#e49d63" value="orange" class="color-btn orange">
+               </div>  
+               <p class="error-message d-none">Please select a color</p> 
+               <div class="buttons">
+                <button class="button back">Back</button>
+                <input type="submit" value="Complete"  class="button complete">
+            </div>            
+           </form> 
+        </div>
+    </section>
+
+    <script type="module" src="JS/app.js"></script>
+</body>
+</html>

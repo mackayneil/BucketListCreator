@@ -1,0 +1,223 @@
+/* Modal */
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(var(--color-grey));
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-roboto);
+}
+
+.fixed {
+    position: fixed;
+}
+
+.modal-contents {
+    width: 800px;
+    height: min-content;
+    background-color: rgb(var(--color-white));
+    margin-top: 100px;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.modal h2 {
+    font-weight: var(--normal);
+    font-size: var(--font-32px);
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    font-size: var(--font-18px);
+}
+
+.modal-contents select {
+    height: 40px;
+    width: 220px;
+    border-radius: 4px;
+    border: 1px solid rgb(var(--color-grey));
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+#name {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(var(--color-grey));
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.dots {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 22px
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(var(--color-white));
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid rgb(var(--color-blue));
+}
+
+.active {
+    background-color: rgb(var(--color-blue));
+}
+
+.modal form {
+    margin-top: 40px;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.inputs div {
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    margin-top: 8px;
+}
+
+.continue {
+    margin-left: auto;
+}
+
+.back {
+    margin-right: auto;
+}
+
+.button {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(var(--color-blue), 0.9);
+    color: rgb(var(--color-white));
+    font-size: var(--font-14px);
+}
+
+.button:hover {
+    background-color: rgb(var(--color-blue));
+}
+
+.button-secondary {   
+    border: none;
+    max-width: max-content;
+    background-color: transparent;
+    cursor: pointer;   
+    color: rgba(var(--color-blue), 0.7);
+    font-size: var(--font-14px);
+    display: inline;
+    border: 1px solid rgba(var(--color-blue), 0.7);
+    border-radius: 8px;
+    padding: 12px 16px
+}
+
+.button-secondary:hover {
+    color: rgb(var(--color-blue));
+}
+
+.color-btn {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    width: 80px;
+    font-size: var(--font-14px);
+}
+
+.color-btn:hover {
+    opacity: 0.8;
+}
+
+.color-btn:active {
+    opacity: 1;
+}
+
+.red {
+    background-color: #e46363;
+    color:rgb(var(--text-dark));
+    opacity: 0.6;
+}
+.blue {
+    background-color: #6383e4;
+    color:rgb(var(--text-dark));
+    opacity: 0.6;
+}
+.green {
+    background-color: #0dc82e;
+    color:rgb(var(--text-dark));
+    opacity: 0.6;
+}
+.purple {
+    background-color: #9463e4;
+    color:rgb(var(--text-dark));
+    opacity: 0.6;
+}
+.grey {
+    background-color: #5e6477;
+    color:rgb(var(--text-dark));
+    opacity: 0.6;
+}
+.pink {
+    background-color: #ca63e4;
+    color:rgb(var(--text-dark));
+    opacity: 0.6;
+}
+.orange {
+    background-color: #e49d63;
+    color:rgb(var(--text-dark));
+    opacity: 0.6;
+}
+
+.clicked {
+    opacity: 1;
+    font-weight: var(--bold);
+}
+.clicked:hover {
+    opacity: 1;
+}
+
+.error-message {
+    font-size: var(--font-12px);
+    color:rgb(228, 99, 99);
+    text-align: left;
+    margin: 0px;
+}
+
+.d-none {
+    display: none;
+}
+
+.opacity {
+    opacity: 0.2;
+}
