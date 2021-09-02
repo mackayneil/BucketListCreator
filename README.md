@@ -1,6 +1,4 @@
-# UdacityLandingPage
-A multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
+This project is based off a project in my Udacity Frontend Nanodegree course. 
+The original project was to just make a page that uses JS to add content to the page, I decided to take it a few steps further and use user input to add the data to the page.
 
-I decided to take this project a step further and test my Javascript knowlegde but making it a bucket list page creator where the info displayed is based off of the user input.
-
-See the live vesion: https://mackayneil.github.io/UdacityLandingPage/index.html
+See the live vesion: https://mackayneil.github.io/BucketListCreator/index.html
